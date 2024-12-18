@@ -1,11 +1,9 @@
 .grid-container {
     display: grid;
-    grid-template-areas:
-        "header header"
-        "aside article"
-        "footer footer";
-    grid-template-columns: repeat(4, 1fr); 
-    grid-template-rows: repeat(6,1fr); 
+    gap: 10px;
+
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4,1fr); 
     background-color: white;
     width: 80%;
     padding: 10px;
@@ -23,7 +21,8 @@
     font-size: 20px;
     font-weight: bold;
     border-radius: 8px;
-    grid-column: 1/5;
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
 
 
@@ -48,6 +47,8 @@
     grid-template-columns: repeat(3, 1fr); 
     gap: 10px;
     border-radius: 8px;
+    grid-column: 2/4;
+    grid-row: 2/4;
 }
 
 .image {
@@ -58,6 +59,7 @@
     color: white;
     font-weight: bold;
     border-radius: 8px;
+
 }
 
 
@@ -69,4 +71,6 @@
     padding: 15px;
     font-size: 18px;
     border-radius: 8px;
+    grid-column: 1/4;
+    grid-row: 4/5;
 }
