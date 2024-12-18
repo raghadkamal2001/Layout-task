@@ -1,0 +1,91 @@
+.grid-container {
+   display: grid;
+   grid-template-columns:repeat(6, 1fr);
+   grid-template-rows: 50px (5, 1fr) 50px ;
+   grid-template-areas:
+      
+      "s1 s1 s1 s1 s1 s1"/*row1*/
+       "s2 s2 m m m m" /*row3*/
+       "s2 s2 m m m m" /*row4*/
+       "s3 s3 m m m m" /*row5*/
+       "s3 s3 m m m m" /*row6*/
+       "s3 s3 ec ec ec ec" /*row7*/
+       "s3 s3 ec ec ec ec" /*row8*/
+       "ri ri ri ri rp rp" /*row9*/
+       "ri ri ri ri rp rp" /*row10*/
+       "f f f f f f";
+gap: 10px;
+}
+
+
+.section1 {
+   grid-area: s1;
+   background-color: #66ff66; 
+   height: 60px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.section2 {
+   grid-area: s2;
+   background-color: #d8c8e0; 
+   height: 200px;
+   text-align: center;
+   gap: 10px;
+   border-bottom: 10px;
+}
+
+.main-content {
+   grid-area: m;
+   background-color: #c0a060; 
+   height: 200px;
+   text-align: center;
+   color: white;
+   padding: 20px;
+}
+
+.section3 {
+   grid-area: s3;
+   background-color: #3d4f29; 
+   height: 250px;
+   text-align: center;
+   color: white;
+}
+
+.extra-content {
+   grid-area: ec;
+   background-color: #99a87f; 
+   height: 200px;
+   text-align: center;
+   color: white;
+   margin-top: 10px;
+}
+
+.related-images {
+   grid-area: ri;
+   background-color: #2680c0; 
+   height: 100px;
+   text-align: center;
+   color: white;
+}
+
+.related-posts {
+   grid-area: rp;
+   background-color: #c0466c; 
+   height: 100px;
+   text-align: center;
+   color: white;
+}
+
+.footer {
+   grid-area: f;
+   background-color: #0000ff;
+   height: 50px;
+   text-align: center;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
